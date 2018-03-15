@@ -1,0 +1,33 @@
+[{{FileHeader}}]
+Version = 4.1.311
+Author = Nobeltec Corporation
+Desc = Automatic Export of objects from Nobeltec Visual Navigation Suite
+
+[VESSEL TRACK - Created 05/12/17 08:57:33++aada3140-4f94-4f9f-bedf-27f744c725b0++]
+Type = Track
+CreateTime = 2017-05-12 15:57:33Z
+Hidden = FALSE
+Locked = FALSE
+Desc = 
+Color = 0xff00ff
+ActiveVesselObjRef = 89da5349-9826-4f95-a72d-525ac5afefe9
+TrackingByTimeInterval = TRUE
+TrackingTimeIntervalSeconds = 60
+TrackingByDistanceInterval = FALSE
+TrackingDistanceInterval = 0.540 nm
+TrackingByCourseChange = FALSE
+TrackingCourseChangeDegrees = 15.000000
+TrackingWakeEnabled = FALSE
+TrackingWakeTimeoutSeconds = 600
+NumberOfTrackMarks = 9
+TrackMarks = {{
+50 39.92140 N 125 56.27690 W 2017-05-12 08:57:33Z
+50 39.92767 N 125 56.36910 W 2017-05-12 08:58:33Z
+50 39.95160 N 125 56.46039 W 2017-05-12 08:59:33Z
+50 39.97710 N 125 56.57750 W 2017-05-12 09:00:33Z
+50 39.97934 N 125 56.69578 W 2017-05-12 09:01:33Z
+50 39.97208 N 125 56.78392 W 2017-05-12 09:02:33Z
+50 39.96735 N 125 56.89908 W 2017-05-12 09:03:33Z
+50 39.98220 N 125 57.02235 W 2017-05-12 09:04:33Z
+50 39.96870 N 125 57.12700 W 2017-05-12 09:05:21Z
+}}
