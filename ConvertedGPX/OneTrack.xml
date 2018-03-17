@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="Oregon 400t" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd">
+<metadata>
+    <link href="http://www.garmin.com">
+        <text>Garmin International</text>
+    </link>
+    <time>2009-10-17T22:58:43Z</time>
+</metadata>
+<trk>
+    <name>Example GPX Document</name>
+    <trkseg>
+        <trkpt lat="50.665356" lon="-125.937950">
+            <ele>0</ele>
+            <time>2017-05-12T08:57:33Z</time>
+        </trkpt>
+        <trkpt lat="50.665462" lon="-125.939484">
+            <ele>0</ele>
+            <time>2017-05-12T08:58:33Z</time>
+        </trkpt>
+        <trkpt lat="50.665859" lon="-125.941010">
+            <ele>0</ele>
+            <time>2017-05-12T08:59:33Z</time>
+        </trkpt>
+        <trkpt lat="50.666286" lon="-125.942955">
+            <ele>0</ele>
+            <time>2017-05-12T09:00:33Z</time>
+        </trkpt>
+        <trkpt lat="50.666321" lon="-125.944931">
+            <ele>0</ele>
+            <time>2017-05-12T09:01:33Z</time>
+        </trkpt>
+        <trkpt lat="50.666203" lon="-125.946396">
+            <ele>0</ele>
+            <time>2017-05-12T09:02:33Z</time>
+        </trkpt>
+        <trkpt lat="50.666122" lon="-125.948318">
+            <ele>0</ele>
+            <time>2017-05-12T09:03:33Z</time>
+        </trkpt>
+        <trkpt lat="50.666370" lon="-125.950371">
+            <ele>0</ele>
+            <time>2017-05-12T09:04:33Z</time>
+        </trkpt>
+        <trkpt lat="50.666145" lon="-125.952118">
+            <ele>0</ele>
+            <time>2017-05-12T09:05:21Z</time>
+        </trkpt>
+    </trkseg>
+</trk>
+</gpx>
