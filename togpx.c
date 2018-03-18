@@ -12,10 +12,35 @@
  * Usage: togpx [text export file] [saved gpx file]
  */
 
+
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 #include <errno.h>
+
+// Multiple marks make up a single route
+#define EXPORT_ROUTE "Type = Route\r\n"
+#define EXPORT_MARK "Type = Mark\r\n"
+#define EXPORT_MARK_TIME "CreateTime"
+#define EXPORT_MARK_COORD "LatLon"
+
+// Multiple trackmarks make up a single track
+#define EXPORT_TRACK "Type = Track\r\n"
+#define EXPORT_TRACKMARKS_BEGIN "TrackMarks = {{\r\n"
+#define EXPORT_TRACKMARKS_END "}}\r\n"
+
+// line buffer size when reading exported text file
+#define LINE_BUFFER 1000
+
+
+
+struct trackpoint
+{
+    float lat;
+    float lng;
+    char timestamp[21];
+};
 
 
 void write_garmin_headers(FILE* gpx)
@@ -44,8 +69,8 @@ void write_footer(FILE* gpx)
 
 int contains_line(FILE* file, char* str)
 {
-    char line[10000];
-    while (fgets(line, 10000, file) != 0)
+    char line[LINE_BUFFER];
+    while (fgets(line, LINE_BUFFER, file) != 0)
     {
         if (strcmp(line, str) == 0)
             return 1;
@@ -53,24 +78,23 @@ int contains_line(FILE* file, char* str)
     return 0;
 }
 
-int is_tracks(FILE* export)
+int starts_with(char* str, char* find)
 {
-    return contains_line(export, "Type = Track\r\n");
-}
-
-int is_routes(FILE* export)
-{
-    return contains_line(export, "Type = Route\r\n");
+    int len = strlen(find);
+    for (int i = 0; i < len; ++i)
+    {
+        if (find[i] != str[i])
+            return 0;
+    }
+    return 1;
 }
 
 void readwrite_tracks(FILE* export, FILE* gpx)
 {
-    char line[10000];
+    char line[LINE_BUFFER];
     int start = 0;
 
-    rewind(export);
-
-    while (fgets(line, 10000, export) != 0)
+    while (fgets(line, LINE_BUFFER, export) != 0)
     {
         if (start == 1)
         {
@@ -83,7 +107,7 @@ void readwrite_tracks(FILE* export, FILE* gpx)
             char ns[2]; // north or south
             char ew[2]; // east or west
 
-            if (strcmp("}}\r\n", line) == 0)
+            if (strcmp(EXPORT_TRACKMARKS_END, line) == 0)
             {
                 char* track_footer = "    </trkseg>\n"
                                      "</trk>\n";
@@ -112,7 +136,7 @@ void readwrite_tracks(FILE* export, FILE* gpx)
                 // printf("time: %s\n", tim);
             }
         }
-        else if (strcmp("TrackMarks = {{\r\n", line) == 0)
+        else if (strcmp(EXPORT_TRACKMARKS_BEGIN, line) == 0)
         {
             char* track_header = "<trk>\n"
                                  "    <name>Example GPX Document</name>\n"
@@ -125,66 +149,76 @@ void readwrite_tracks(FILE* export, FILE* gpx)
 
 void readwrite_routes(FILE* export, FILE* gpx)
 {
-    // char line[10000];
-    // int route_started = 0;
-    // int mark_started = 0;
+    char* track_header = "<trk>\n"
+                         "    <name>Example GPX Document</name>\n"
+                         "    <trkseg>\n";
+    char* track_point  = "        <trkpt lat=\"%f\" lon=\"%f\">\n"
+                         "            <ele>0</ele>\n"
+                         "            <time>%s</time>\n"
+                         "        </trkpt>\n";
+   char* track_footer  = "    </trkseg>\n"
+                         "</trk>\n";
 
-    // int lat;
-    // float latminutes;
-    // int lng;
-    // float lngminutes;
-    // char date[11];
-    // char tim[10];
-    // char ns[2]; // north or south
-    // char ew[2]; // east or west
+    char line[LINE_BUFFER];
+    struct trackpoint point;
+    int route_started = 0;
+    int ignore_next_time = 1;
 
-    // rewind(export);
+    while (fgets(line, LINE_BUFFER, export) != 0)
+    {
+        if (strcmp(EXPORT_ROUTE, line) == 0)
+        {
+            if (route_started)
+                fprintf(gpx, "%s", track_footer);
+            else
+                route_started = 1;
 
-    // while (fgets(line, 10000, export) != 0)
-    // {
-    //     if (route_started == 1)
-    //     {
-    //         if (mark_started == 1)
-    //         {
-    //         }
-    //         if (strcmp("Type = Mark\r\n", line) == 0)
-    //         {
-    //             char* track_footer = "    </trkseg>\n"
-    //                                  "</trk>\n";
-    //             fprintf(gpx, "%s", track_footer);
-    //             route_started = 0;
-    //             continue;
-    //         }
+            ignore_next_time = 1;
+            fprintf(gpx, "%s", track_header);
+        }
+        // start of mark
+        else if (starts_with(line, EXPORT_MARK_TIME))
+        {
+            char throwaway[LINE_BUFFER];
+            char date[11];
+            char time[10];
 
-    //         // 50 39.92140 N 125 56.27690 W 2017-05-12 08:57:33Z
-    //         if (sscanf(line, "%i %f %s %i %f %s %s %s", &lat, &latminutes, ns, &lng, &lngminutes, ew, date, tim) == 8)
-    //         {
-    //             float lattitude = (float)lat + (latminutes/60);
-    //             float longitude = (float)lng + (lngminutes/60);
-    //             char* track_points = "        <trkpt lat=\"%f\" lon=\"%f\">\n"
-    //                                  "            <ele>0</ele>\n"
-    //                                  "            <time>%sT%s</time>\n"
-    //                                  "        </trkpt>\n";
-    //             if (ns[0] == 'S')
-    //                 lattitude *= -1.0;
-    //             if (ew[0] == 'W')
-    //                 longitude *= -1.0;
-    //             fprintf(gpx, track_points, lattitude, longitude, date, tim);
-    //             // printf("lat:  %f\n", (float)lat + (latminutes/60));
-    //             // printf("lng:  %f\n", (float)lng + (lngminutes/60));
-    //             // printf("date: %s\n", date);
-    //             // printf("time: %s\n", tim);
-    //         }
-    //     }
-    //     else if (strcmp("Type = Route\r\n", line) == 0)
-    //     {
-    //         char* track_header = "<trk>\n"
-    //                              "    <name>Example GPX Document</name>\n"
-    //                              "    <trkseg>\n";
-    //         fprintf(gpx, "%s", track_header);
-    //         route_started = 1;
-    //     }
-    // }
+            if (ignore_next_time)
+            {
+                ignore_next_time = 0;
+                continue;
+            }
+
+            // e.g. CreateTime = 2017-05-13 22:19:00Z
+            if (sscanf(line, "%s %s %s %s", throwaway, throwaway, date, time) == 4)
+                sprintf(point.timestamp, "%sT%s", date, time);
+        }
+        // end of mark
+        else if (starts_with(line, EXPORT_MARK_COORD))
+        {
+            char throwaway[LINE_BUFFER];
+            int lat;
+            float latmin;
+            char ns[2]; // N or S
+            int lng;
+            float lngmin;
+            char ew[2]; // E or W
+            
+            // e.g. LatLon = 50 38.11920 N 126 17.97594 W
+            if (sscanf(line, "%s %s %i %f %s %i %f %s", throwaway, throwaway, &lat, &latmin, ns, &lng, &lngmin, ew) == 8)
+            {
+                int latsign = (ns[0] == 'N') ? 1 : -1;
+                int lngsign = (ns[0] == 'E') ? 1 : -1;
+                point.lat = (float)lat * latsign + (latmin/60);
+                point.lng = (float)lng * lngsign + (lngmin/60);
+
+                fprintf(gpx, track_point, point.lat, point.lng, point.timestamp);
+            }
+        }
+    }
+
+    if (route_started)
+        fprintf(gpx, "%s", track_footer);
 }
 
 int main(int argc, char** argv)
@@ -206,8 +240,9 @@ int main(int argc, char** argv)
     }
 
     gpx = fopen(argv[2], "w");
-    if (export == 0)
+    if (gpx == 0)
     {
+        fclose(export);
         printf("Error opening saved gpx file. Error #: %i\n", errno);
         exit(-1);
     }
@@ -215,10 +250,12 @@ int main(int argc, char** argv)
     write_garmin_headers(gpx);
     write_metadata(gpx);
 
-    if (is_tracks(export))
+    if (contains_line(export, EXPORT_TRACK))
         readwrite_tracks(export, gpx);
-    else if (is_routes(export))
+    else if (fseek(export, 0, SEEK_SET) == 0 && contains_line(export, EXPORT_ROUTE))
         readwrite_routes(export, gpx);
+    else
+        printf("Non supported export file.\n");
     
     write_footer(gpx);
 
