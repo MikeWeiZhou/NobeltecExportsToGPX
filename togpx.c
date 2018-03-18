@@ -176,43 +176,46 @@ void readwrite_routes(FILE* export, FILE* gpx)
             ignore_next_time = 1;
             fprintf(gpx, "%s", track_header);
         }
-        // start of mark
-        else if (starts_with(line, EXPORT_MARK_TIME))
+        else if (route_started)
         {
-            char throwaway[LINE_BUFFER];
-            char date[11];
-            char time[10];
-
-            if (ignore_next_time)
+            // start of mark
+            if (starts_with(line, EXPORT_MARK_TIME))
             {
-                ignore_next_time = 0;
-                continue;
+                char throwaway[LINE_BUFFER];
+                char date[11];
+                char time[10];
+
+                if (ignore_next_time)
+                {
+                    ignore_next_time = 0;
+                    continue;
+                }
+
+                // e.g. CreateTime = 2017-05-13 22:19:00Z
+                if (sscanf(line, "%s %s %s %s", throwaway, throwaway, date, time) == 4)
+                    sprintf(point.timestamp, "%sT%s", date, time);
             }
-
-            // e.g. CreateTime = 2017-05-13 22:19:00Z
-            if (sscanf(line, "%s %s %s %s", throwaway, throwaway, date, time) == 4)
-                sprintf(point.timestamp, "%sT%s", date, time);
-        }
-        // end of mark
-        else if (starts_with(line, EXPORT_MARK_COORD))
-        {
-            char throwaway[LINE_BUFFER];
-            int lat;
-            float latmin;
-            char ns[2]; // N or S
-            int lng;
-            float lngmin;
-            char ew[2]; // E or W
-            
-            // e.g. LatLon = 50 38.11920 N 126 17.97594 W
-            if (sscanf(line, "%s %s %i %f %s %i %f %s", throwaway, throwaway, &lat, &latmin, ns, &lng, &lngmin, ew) == 8)
+            // end of mark
+            else if (starts_with(line, EXPORT_MARK_COORD))
             {
-                int latsign = (ns[0] == 'N') ? 1 : -1;
-                int lngsign = (ns[0] == 'E') ? 1 : -1;
-                point.lat = (float)lat * latsign + (latmin/60);
-                point.lng = (float)lng * lngsign + (lngmin/60);
+                char throwaway[LINE_BUFFER];
+                int lat;
+                float latmin;
+                char ns[2]; // N or S
+                int lng;
+                float lngmin;
+                char ew[2]; // E or W
+                
+                // e.g. LatLon = 50 38.11920 N 126 17.97594 W
+                if (sscanf(line, "%s %s %i %f %s %i %f %s", throwaway, throwaway, &lat, &latmin, ns, &lng, &lngmin, ew) == 8)
+                {
+                    int latsign = (ns[0] == 'N') ? 1 : -1;
+                    int lngsign = (ns[0] == 'E') ? 1 : -1;
+                    point.lat = ((float)lat + (latmin/60)) * latsign;
+                    point.lng = ((float)lng + (lngmin/60)) * lngsign;
 
-                fprintf(gpx, track_point, point.lat, point.lng, point.timestamp);
+                    fprintf(gpx, track_point, point.lat, point.lng, point.timestamp);
+                }
             }
         }
     }

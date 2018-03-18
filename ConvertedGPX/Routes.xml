@@ -6,54 +6,14 @@
     </link>
     <time>2009-10-17T22:58:43Z</time>
 </metadata>
-        <trkpt lat="50.635319" lon="-125.700401">
-            <ele>0</ele>
-            <time>2017-05-13T22:19:00Z</time>
-        </trkpt>
-        <trkpt lat="50.629250" lon="-125.692009">
-            <ele>0</ele>
-            <time>2017-05-13T22:19:02Z</time>
-        </trkpt>
-        <trkpt lat="50.613068" lon="-125.700172">
-            <ele>0</ele>
-            <time>2017-05-13T22:19:05Z</time>
-        </trkpt>
-        <trkpt lat="50.607555" lon="-125.692177">
-            <ele>0</ele>
-            <time>2017-05-13T22:19:12Z</time>
-        </trkpt>
-        <trkpt lat="50.606564" lon="-125.688705">
-            <ele>0</ele>
-            <time>2017-05-13T22:19:18Z</time>
-        </trkpt>
-        <trkpt lat="50.605270" lon="-125.685524">
-            <ele>0</ele>
-            <time>2017-05-13T22:19:23Z</time>
-        </trkpt>
-        <trkpt lat="50.604568" lon="-125.683952">
-            <ele>0</ele>
-            <time>2017-05-13T22:19:28Z</time>
-        </trkpt>
-        <trkpt lat="50.602047" lon="-125.683044">
-            <ele>0</ele>
-            <time>2017-05-13T22:19:31Z</time>
-        </trkpt>
-        <trkpt lat="50.600819" lon="-125.681595">
-            <ele>0</ele>
-            <time>2017-05-13T22:19:33Z</time>
-        </trkpt>
-        <trkpt lat="50.598038" lon="-125.684464">
-            <ele>0</ele>
-            <time>2017-05-13T22:19:36Z</time>
-        </trkpt>
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.672440" lon="-125.952179">
+        <trkpt lat="50.672440" lon="-126.047821">
             <ele>0</ele>
             <time>2017-05-13T22:20:31Z</time>
         </trkpt>
-        <trkpt lat="50.636562" lon="-125.705780">
+        <trkpt lat="50.636562" lon="-126.294220">
             <ele>0</ele>
             <time>2017-05-13T22:20:34Z</time>
         </trkpt>
@@ -62,11 +22,11 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.693253" lon="-124.008904">
+        <trkpt lat="50.693253" lon="-125.991096">
             <ele>0</ele>
             <time>2017-05-16T00:10:59Z</time>
         </trkpt>
-        <trkpt lat="50.662663" lon="-125.960037">
+        <trkpt lat="50.662663" lon="-126.039963">
             <ele>0</ele>
             <time>2017-05-16T00:11:00Z</time>
         </trkpt>
@@ -75,11 +35,11 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.669670" lon="-125.994141">
+        <trkpt lat="50.669670" lon="-126.005859">
             <ele>0</ele>
             <time>2017-05-16T19:03:36Z</time>
         </trkpt>
-        <trkpt lat="50.660065" lon="-125.938797">
+        <trkpt lat="50.660065" lon="-126.061203">
             <ele>0</ele>
             <time>2017-05-16T19:03:38Z</time>
         </trkpt>
@@ -88,47 +48,47 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.652042" lon="-125.794701">
+        <trkpt lat="50.652042" lon="-126.205299">
             <ele>0</ele>
             <time>2017-05-16T23:09:08Z</time>
         </trkpt>
-        <trkpt lat="50.634007" lon="-125.688011">
+        <trkpt lat="50.634007" lon="-126.311989">
             <ele>0</ele>
             <time>2017-05-16T23:09:10Z</time>
         </trkpt>
-        <trkpt lat="50.610924" lon="-125.715759">
+        <trkpt lat="50.610924" lon="-126.284241">
             <ele>0</ele>
             <time>2017-05-16T23:09:15Z</time>
         </trkpt>
-        <trkpt lat="50.597618" lon="-125.724716">
+        <trkpt lat="50.597618" lon="-126.275284">
             <ele>0</ele>
             <time>2017-05-16T23:09:20Z</time>
         </trkpt>
-        <trkpt lat="50.585205" lon="-125.743309">
+        <trkpt lat="50.585205" lon="-126.256691">
             <ele>0</ele>
             <time>2017-05-16T23:09:23Z</time>
         </trkpt>
-        <trkpt lat="50.576256" lon="-125.803650">
+        <trkpt lat="50.576256" lon="-126.196350">
             <ele>0</ele>
             <time>2017-05-16T23:09:28Z</time>
         </trkpt>
-        <trkpt lat="50.556610" lon="-125.788658">
+        <trkpt lat="50.556610" lon="-126.211342">
             <ele>0</ele>
             <time>2017-05-16T23:09:31Z</time>
         </trkpt>
-        <trkpt lat="50.542156" lon="-125.780029">
+        <trkpt lat="50.542156" lon="-126.219971">
             <ele>0</ele>
             <time>2017-05-16T23:09:33Z</time>
         </trkpt>
-        <trkpt lat="50.527119" lon="-125.706055">
+        <trkpt lat="50.527119" lon="-126.293945">
             <ele>0</ele>
             <time>2017-05-16T23:09:43Z</time>
         </trkpt>
-        <trkpt lat="50.511490" lon="-125.689896">
+        <trkpt lat="50.511490" lon="-126.310104">
             <ele>0</ele>
             <time>2017-05-16T23:09:49Z</time>
         </trkpt>
-        <trkpt lat="50.487495" lon="-125.781082">
+        <trkpt lat="50.487495" lon="-126.218918">
             <ele>0</ele>
             <time>2017-05-16T23:09:52Z</time>
         </trkpt>
@@ -137,11 +97,11 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.286736" lon="-123.207359">
+        <trkpt lat="50.286736" lon="-124.792641">
             <ele>0</ele>
             <time>2017-05-23T13:19:07Z</time>
         </trkpt>
-        <trkpt lat="50.286736" lon="-123.199585">
+        <trkpt lat="50.286736" lon="-124.800415">
             <ele>0</ele>
             <time>2017-05-23T13:19:09Z</time>
         </trkpt>
@@ -150,31 +110,31 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.286518" lon="-123.189331">
+        <trkpt lat="50.286518" lon="-124.810669">
             <ele>0</ele>
             <time>2017-05-23T13:19:46Z</time>
         </trkpt>
-        <trkpt lat="50.287964" lon="-123.191475">
+        <trkpt lat="50.287964" lon="-124.808525">
             <ele>0</ele>
             <time>2017-05-23T13:19:47Z</time>
         </trkpt>
-        <trkpt lat="50.286663" lon="-123.192825">
+        <trkpt lat="50.286663" lon="-124.807175">
             <ele>0</ele>
             <time>2017-05-23T13:19:49Z</time>
         </trkpt>
-        <trkpt lat="50.287636" lon="-123.194405">
+        <trkpt lat="50.287636" lon="-124.805595">
             <ele>0</ele>
             <time>2017-05-23T13:19:49Z</time>
         </trkpt>
-        <trkpt lat="50.286663" lon="-123.195976">
+        <trkpt lat="50.286663" lon="-124.804024">
             <ele>0</ele>
             <time>2017-05-23T13:19:50Z</time>
         </trkpt>
-        <trkpt lat="50.287491" lon="-123.197838">
+        <trkpt lat="50.287491" lon="-124.802162">
             <ele>0</ele>
             <time>2017-05-23T13:19:52Z</time>
         </trkpt>
-        <trkpt lat="50.287239" lon="-123.198685">
+        <trkpt lat="50.287239" lon="-124.801315">
             <ele>0</ele>
             <time>2017-05-23T13:19:52Z</time>
         </trkpt>
@@ -183,15 +143,15 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.156509" lon="-123.293915">
+        <trkpt lat="50.156509" lon="-124.706085">
             <ele>0</ele>
             <time>2017-05-26T21:26:18Z</time>
         </trkpt>
-        <trkpt lat="50.196175" lon="-123.355629">
+        <trkpt lat="50.196175" lon="-124.644371">
             <ele>0</ele>
             <time>2017-05-26T21:26:22Z</time>
         </trkpt>
-        <trkpt lat="50.226521" lon="-123.362282">
+        <trkpt lat="50.226521" lon="-124.637718">
             <ele>0</ele>
             <time>2017-05-26T21:26:25Z</time>
         </trkpt>
@@ -200,15 +160,15 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.449398" lon="-124.390999">
+        <trkpt lat="50.449398" lon="-125.609001">
             <ele>0</ele>
             <time>2017-05-26T23:57:33Z</time>
         </trkpt>
-        <trkpt lat="50.550106" lon="-124.456451">
+        <trkpt lat="50.550106" lon="-125.543549">
             <ele>0</ele>
             <time>2017-05-26T23:57:35Z</time>
         </trkpt>
-        <trkpt lat="50.658443" lon="-124.475685">
+        <trkpt lat="50.658443" lon="-125.524315">
             <ele>0</ele>
             <time>2017-05-26T23:57:46Z</time>
         </trkpt>
@@ -217,19 +177,19 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.290588" lon="-123.206108">
+        <trkpt lat="50.290588" lon="-124.793892">
             <ele>0</ele>
             <time>2017-05-29T20:45:55Z</time>
         </trkpt>
-        <trkpt lat="50.335285" lon="-124.999397">
+        <trkpt lat="50.335285" lon="-125.000603">
             <ele>0</ele>
             <time>2017-05-29T20:45:59Z</time>
         </trkpt>
-        <trkpt lat="50.308910" lon="-124.942055">
+        <trkpt lat="50.308910" lon="-125.057945">
             <ele>0</ele>
             <time>2017-05-29T20:46:01Z</time>
         </trkpt>
-        <trkpt lat="50.338146" lon="-124.893707">
+        <trkpt lat="50.338146" lon="-125.106293">
             <ele>0</ele>
             <time>2017-05-29T20:46:06Z</time>
         </trkpt>
@@ -238,31 +198,31 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.438515" lon="-124.501457">
+        <trkpt lat="50.438515" lon="-125.498543">
             <ele>0</ele>
             <time>2017-05-29T20:58:34Z</time>
         </trkpt>
-        <trkpt lat="50.445446" lon="-124.575348">
+        <trkpt lat="50.445446" lon="-125.424652">
             <ele>0</ele>
             <time>2017-05-29T20:58:46Z</time>
         </trkpt>
-        <trkpt lat="50.463558" lon="-124.603363">
+        <trkpt lat="50.463558" lon="-125.396637">
             <ele>0</ele>
             <time>2017-05-29T20:58:56Z</time>
         </trkpt>
-        <trkpt lat="50.472912" lon="-124.632782">
+        <trkpt lat="50.472912" lon="-125.367218">
             <ele>0</ele>
             <time>2017-05-29T20:59:12Z</time>
         </trkpt>
-        <trkpt lat="50.447189" lon="-124.703514">
+        <trkpt lat="50.447189" lon="-125.296486">
             <ele>0</ele>
             <time>2017-05-29T20:59:24Z</time>
         </trkpt>
-        <trkpt lat="50.446114" lon="-124.747253">
+        <trkpt lat="50.446114" lon="-125.252747">
             <ele>0</ele>
             <time>2017-05-29T20:59:49Z</time>
         </trkpt>
-        <trkpt lat="50.413528" lon="-124.784691">
+        <trkpt lat="50.413528" lon="-125.215309">
             <ele>0</ele>
             <time>2017-05-29T21:00:04Z</time>
         </trkpt>
@@ -271,11 +231,11 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.393822" lon="-124.832619">
+        <trkpt lat="50.393822" lon="-125.167381">
             <ele>0</ele>
             <time>2017-05-29T21:04:46Z</time>
         </trkpt>
-        <trkpt lat="50.394688" lon="-124.832619">
+        <trkpt lat="50.394688" lon="-125.167381">
             <ele>0</ele>
             <time>2017-05-29T21:04:59Z</time>
         </trkpt>
@@ -284,19 +244,19 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.558361" lon="-124.463875">
+        <trkpt lat="50.558361" lon="-125.536125">
             <ele>0</ele>
             <time>2017-05-30T16:36:46Z</time>
         </trkpt>
-        <trkpt lat="50.556000" lon="-124.469597">
+        <trkpt lat="50.556000" lon="-125.530403">
             <ele>0</ele>
             <time>2017-05-30T16:36:48Z</time>
         </trkpt>
-        <trkpt lat="50.552452" lon="-124.473358">
+        <trkpt lat="50.552452" lon="-125.526642">
             <ele>0</ele>
             <time>2017-05-30T16:36:49Z</time>
         </trkpt>
-        <trkpt lat="50.550591" lon="-124.473579">
+        <trkpt lat="50.550591" lon="-125.526421">
             <ele>0</ele>
             <time>2017-05-30T16:36:50Z</time>
         </trkpt>
@@ -305,11 +265,11 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.498077" lon="-124.422966">
+        <trkpt lat="50.498077" lon="-125.577034">
             <ele>0</ele>
             <time>2017-06-04T18:39:54Z</time>
         </trkpt>
-        <trkpt lat="50.453697" lon="-124.398254">
+        <trkpt lat="50.453697" lon="-125.601746">
             <ele>0</ele>
             <time>2017-06-04T18:39:55Z</time>
         </trkpt>
@@ -318,11 +278,11 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.466984" lon="-124.638031">
+        <trkpt lat="50.466984" lon="-125.361969">
             <ele>0</ele>
             <time>2017-06-04T21:47:09Z</time>
         </trkpt>
-        <trkpt lat="50.440758" lon="-124.746834">
+        <trkpt lat="50.440758" lon="-125.253166">
             <ele>0</ele>
             <time>2017-06-04T21:47:14Z</time>
         </trkpt>
@@ -331,11 +291,11 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.130554" lon="-124.808800">
+        <trkpt lat="50.130554" lon="-125.191200">
             <ele>0</ele>
             <time>2017-06-05T01:56:07Z</time>
         </trkpt>
-        <trkpt lat="50.120014" lon="-124.820923">
+        <trkpt lat="50.120014" lon="-125.179077">
             <ele>0</ele>
             <time>2017-06-05T01:56:09Z</time>
         </trkpt>
@@ -344,11 +304,11 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.139648" lon="-124.889023">
+        <trkpt lat="50.139648" lon="-125.110977">
             <ele>0</ele>
             <time>2017-06-05T01:56:46Z</time>
         </trkpt>
-        <trkpt lat="50.129467" lon="-124.878250">
+        <trkpt lat="50.129467" lon="-125.121750">
             <ele>0</ele>
             <time>2017-06-05T01:56:47Z</time>
         </trkpt>
@@ -357,11 +317,11 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.124340" lon="-124.902031">
+        <trkpt lat="50.124340" lon="-125.097969">
             <ele>0</ele>
             <time>2017-06-05T01:56:53Z</time>
         </trkpt>
-        <trkpt lat="50.113079" lon="-124.913925">
+        <trkpt lat="50.113079" lon="-125.086075">
             <ele>0</ele>
             <time>2017-06-05T01:56:55Z</time>
         </trkpt>
@@ -370,11 +330,11 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.199997" lon="-124.988098">
+        <trkpt lat="50.199997" lon="-125.011902">
             <ele>0</ele>
             <time>2017-06-05T13:49:57Z</time>
         </trkpt>
-        <trkpt lat="50.183681" lon="-124.994598">
+        <trkpt lat="50.183681" lon="-125.005402">
             <ele>0</ele>
             <time>2017-06-05T13:49:59Z</time>
         </trkpt>
@@ -383,15 +343,15 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.177547" lon="-124.966324">
+        <trkpt lat="50.177547" lon="-125.033676">
             <ele>0</ele>
             <time>2017-06-05T13:50:20Z</time>
         </trkpt>
-        <trkpt lat="50.179638" lon="-124.978104">
+        <trkpt lat="50.179638" lon="-125.021896">
             <ele>0</ele>
             <time>2017-06-05T13:50:22Z</time>
         </trkpt>
-        <trkpt lat="50.177979" lon="-124.985512">
+        <trkpt lat="50.177979" lon="-125.014488">
             <ele>0</ele>
             <time>2017-06-05T13:50:23Z</time>
         </trkpt>
@@ -400,11 +360,11 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.208290" lon="-124.975754">
+        <trkpt lat="50.208290" lon="-125.024246">
             <ele>0</ele>
             <time>2017-06-05T13:50:30Z</time>
         </trkpt>
-        <trkpt lat="50.201080" lon="-124.986191">
+        <trkpt lat="50.201080" lon="-125.013809">
             <ele>0</ele>
             <time>2017-06-05T13:50:31Z</time>
         </trkpt>
@@ -413,23 +373,23 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="50.064697" lon="-124.917145">
+        <trkpt lat="50.064697" lon="-125.082855">
             <ele>0</ele>
             <time>2017-06-05T17:02:25Z</time>
         </trkpt>
-        <trkpt lat="50.021904" lon="-124.932388">
+        <trkpt lat="50.021904" lon="-125.067612">
             <ele>0</ele>
             <time>2017-06-05T17:02:27Z</time>
         </trkpt>
-        <trkpt lat="49.986599" lon="-123.005058">
+        <trkpt lat="49.986599" lon="-124.994942">
             <ele>0</ele>
             <time>2017-06-05T17:02:29Z</time>
         </trkpt>
-        <trkpt lat="50.008602" lon="-123.056206">
+        <trkpt lat="50.008602" lon="-124.943794">
             <ele>0</ele>
             <time>2017-06-05T17:02:30Z</time>
         </trkpt>
-        <trkpt lat="49.983727" lon="-123.229378">
+        <trkpt lat="49.983727" lon="-124.770622">
             <ele>0</ele>
             <time>2017-06-05T17:02:33Z</time>
         </trkpt>
@@ -438,11 +398,11 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="49.087322" lon="-122.669968">
+        <trkpt lat="49.087322" lon="-123.330032">
             <ele>0</ele>
             <time>2017-06-12T11:16:14Z</time>
         </trkpt>
-        <trkpt lat="49.809441" lon="-123.445053">
+        <trkpt lat="49.809441" lon="-124.554947">
             <ele>0</ele>
             <time>2017-06-12T11:16:21Z</time>
         </trkpt>
@@ -451,15 +411,15 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="49.909664" lon="-123.167213">
+        <trkpt lat="49.909664" lon="-124.832787">
             <ele>0</ele>
             <time>2017-06-12T21:23:04Z</time>
         </trkpt>
-        <trkpt lat="49.880630" lon="-123.397270">
+        <trkpt lat="49.880630" lon="-124.602730">
             <ele>0</ele>
             <time>2017-06-12T21:23:06Z</time>
         </trkpt>
-        <trkpt lat="49.837067" lon="-123.461716">
+        <trkpt lat="49.837067" lon="-124.538284">
             <ele>0</ele>
             <time>2017-06-12T21:23:08Z</time>
         </trkpt>
@@ -468,11 +428,11 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="49.262409" lon="-123.967941">
+        <trkpt lat="49.262409" lon="-124.032059">
             <ele>0</ele>
             <time>2017-06-12T22:52:04Z</time>
         </trkpt>
-        <trkpt lat="49.167316" lon="-122.684189">
+        <trkpt lat="49.167316" lon="-123.315811">
             <ele>0</ele>
             <time>2017-06-12T22:52:10Z</time>
         </trkpt>
@@ -481,11 +441,11 @@
 <trk>
     <name>Example GPX Document</name>
     <trkseg>
-        <trkpt lat="49.502262" lon="-123.912415">
+        <trkpt lat="49.502262" lon="-124.087585">
             <ele>0</ele>
             <time>2017-06-13T02:58:38Z</time>
         </trkpt>
-        <trkpt lat="49.122612" lon="-122.682495">
+        <trkpt lat="49.122612" lon="-123.317505">
             <ele>0</ele>
             <time>2017-06-13T02:58:44Z</time>
         </trkpt>
